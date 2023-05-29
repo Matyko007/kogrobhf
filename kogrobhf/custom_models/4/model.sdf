@@ -18,7 +18,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/xaba/custom_models/4.dae</uri>
+            <uri>../4.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -31,7 +31,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/xaba/custom_models/4.dae</uri>
+            <uri>../4.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
