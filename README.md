@@ -7,6 +7,8 @@ https://github.com/pal-robotics/aruco_ros
 Majd az ezen a repo-n lévő Aruco mappából másoljátok át a launch és src fájlokat felülírva az aruco_ros/aruco_ros/src vagy launch alatt található fájlokat. 
 
 Használata:
+Elsőként a turtlebot kameráját vízszintesbe kell tenni. Ezt a turtlebot3/turtlebot3_description/urdf/turtlebot3_burger.urdf.xacro fájl módosításával lehet. Valahol a camera leírásánál van egy rpy = kettő nulla meg egy 45 fok radban nagyságrendű szám, azt is nullára kell írni. Az a baj, hogy pontosan nem emlékszem, hogy már hol volt. 
+
 1. Gazebos szimuláció indít
 2. Rviz indít
 3. roslaunch aruco_ros marker_publisher.launch indítása
