@@ -19,7 +19,7 @@
         <geometry>
           <mesh>
             <uri>../56.dae</uri>
-            <scale>1 1 1</scale>
+            <scale>1.5 1.5 1.5</scale>
           </mesh>
         </geometry>
         <transparency>0</transparency>
@@ -32,7 +32,7 @@
         <geometry>
           <mesh>
             <uri>../56.dae</uri>
-            <scale>1 1 1</scale>
+            <scale>1.5 1.5 1.5</scale>
           </mesh>
         </geometry>
         <surface>
