@@ -22,7 +22,16 @@ Szintént be kell másolni a saját repo-ból a launch és az src fileokat a mos
                -Ha nem akarja felismerni, vagy néha igen-néha nem, akkor egy fényt kell berakni gazeboba, hogy kontrasztosabb legyen az ar tag
 6.roslaunch bme_ros_navigation manual_waypoints.launch
 
-a node újraindításáva
+A node újraindításával újra ás újra navigálhatjuk a robotot egy másik tag-re.
+
+Navigáció működése:
+    A marker_publisher.launch file-ban megadjuk a kocka méretét (0.1 [m]) Fontos, hogy ezt a méretet fogja használni és úgy fogja arányosítani a távolságot a látott mérethez képest.
+
+    Az src mappában lévő adat.cpp filet rosrun bme_ros_navigation hajra-val tudjuk elindítani, ez felsubscribolodik a marker pozició és a robot "középpontjának" a pozíciójára, így ezekkel az értékeket emg tudjuk jelenítni.
+    Illetve a nav_goals.cpp-ben is jutunk hozzá az adatokhoz.
+    A marker pozícióját a globális koordináta rendszerhez képes mondjuk meg, így ezz egy az egyben odaadjuk a nav_goals.cpp-nek. Illetve a szöget úgy számoljuk ki, hogy a markerbe és a robotba mutató helyvektorokat kivonjuk egymásból. És ennek a vektornak a szögét használjuk a markerre történő ráállásra. Vagyis a robotból a markerre mutató vektor irányával (globális szempontból)
+
+    Ahhoz, hogy ne ütközzünk össze a kockával, valahogy meg kellen mondanunk, hogy az adott irányban mennyivel csökkentsük vagy éppen növeljuk az x,y koordinátákat. Ehelyett a maker_publsiher.launch-ban megadott értéket kisebbre vesszük. Így mindig kicsit nagyobbnak, vagyis közelebbinek fogja látni a taget a kamera. És így továbbra is használhatjuk az x,y koordinátákat egyyszerűen.
 
 AR tag generátor:
 
