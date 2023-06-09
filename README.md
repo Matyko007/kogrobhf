@@ -31,7 +31,6 @@ sudo apt install ros-$(rosversion -d)-interactive-marker-twist-server
 5. helyezzünk egy kockát a robot látóterébe
         Megj.: -Megjelenítés: Rviz-ben katt arra, hogy add és utána topic alapján hozzá tudod adni az imaget aruco_marker_publisher/result/image/raw
                -Ha nem akarja felismerni, vagy néha igen-néha nem, akkor egy fényt kell berakni gazeboba, hogy kontrasztosabb legyen az ar tag
-               
 6.roslaunch bme_ros_navigation manual_waypoints.launch
 
 A node újraindításával újra ás újra navigálhatjuk a robotot egy másik tag-re.
