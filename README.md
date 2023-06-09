@@ -1,5 +1,7 @@
 # kogrobhf
 
+![4](https://github.com/Matyko007/kogrobhf/assets/130318497/fc42a5fe-1f12-48d2-a770-7315f21bc9a8)
+
 Az AR tag olvasóhoz töltsétek le ezt az aruco_ros packaget:
 
 https://github.com/pal-robotics/aruco_ros
@@ -11,6 +13,7 @@ Elsőként a turtlebot kameráját vízszintesbe kell tenni. Ezt a robot .xacro 
 A navigációs csomagokhoz töltsétek le a tárgyhoz tartozó git repot:
 
 https://github.com/MOGI-ROS/Week-7-8-Navigation.git
+![1](https://github.com/Matyko007/kogrobhf/assets/130318497/14688f53-f0a0-4bcf-bf24-f339c107f5ec)
 Szintént be kell másolni a saját repo-ból a launch és az src fileokat a most leklónozott repó megfelelő helyire.
 
 ezeket felrakni:
@@ -23,6 +26,7 @@ sudo apt install ros-$(rosversion -d)-amcl
 sudo apt install ros-$(rosversion -d)-interactive-marker-twist-server
 
 
+![2](https://github.com/Matyko007/kogrobhf/assets/130318497/0b4f8c72-d42a-4ab9-99b4-6a02226e8aeb)
 
 1. roslaunch bme_ros_navigation spawn_robot.launch
 2. roslaunch bme_ros_navigation navigation.launch
