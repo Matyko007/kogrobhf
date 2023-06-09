@@ -13,6 +13,17 @@ A navigációs csomagokhoz töltsétek le a tárgyhoz tartozó git repot:
 https://github.com/MOGI-ROS/Week-7-8-Navigation.git
 Szintént be kell másolni a saját repo-ból a launch és az src fileokat a most leklónozott repó megfelelő helyire.
 
+ezeket felrakni:
+sudo apt install ros-$(rosversion -d)-hector-slam 
+
+sudo apt install ros-$(rosversion -d)-map-server
+
+sudo apt install ros-$(rosversion -d)-amcl
+
+sudo apt install ros-$(rosversion -d)-interactive-marker-twist-server
+
+
+
 1. roslaunch bme_ros_navigation spawn_robot.launch
 2. roslaunch bme_ros_navigation navigation.launch
 3. roslaunch aruco_ros marker_publisher.launch indítása
